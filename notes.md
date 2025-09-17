@@ -1,4 +1,4 @@
-#Talks
+# Talks
 
 ## Step Through Debugger (Rodrigo Mesquita (romes))
 
@@ -6,7 +6,7 @@ Demoing a Step Through Debugger, visualizing variables, expressions, stepping th
 
 Support for GHC 9.14 and later (so currently only alpha versions of the compiler)
 
-(github)[https://well-typed.github.io/haskell-debugger/]
+[github](https://well-typed.github.io/haskell-debugger/)
 
 When designing a debugger for a lazy language, you can either pretend the language is strict, or trace it as it's actually lazily evaluated. The correct choice is "as it's actually evaluated": People will get used to following the lazy evaluation order 
  - Simon Marlow (Paraphrased)
