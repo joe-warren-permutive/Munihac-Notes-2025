@@ -254,11 +254,17 @@ concatLeft = (long ++ veryLong) ++ extraLong
 
 ## Karl Filip Faxen
 
-### Specifying the Semantics of the Haskell Type Checker in lean
+### Specifying the Semantics 
+### of the Haskell Type Checker 
+### in lean
+
+<br/>
 
 * Implementing the Haskell 98' Spec
 * Mostly finished; constructors still not done, about 70-80% complete. 
 * If complete, would allow you to explore properties of the Haskell type checker. 
+
+<br/>
 
 > e.g. Can you prove that the Monomorphism Restriction removes the Principal Type Property
 >
@@ -266,7 +272,10 @@ concatLeft = (long ++ veryLong) ++ extraLong
 
 ---
 
-## Rodrigo Mesquita : HDB
+## Rodrigo Mesquita (romes)
+### HDB
+
+<br/>
 
 * Fixed several issues in HDB
     * It has a version flag now
@@ -277,7 +286,7 @@ concatLeft = (long ++ veryLong) ++ extraLong
 
 ## Rodrigo Mesquita 
 
-### HDB
+<br/>
 
 * Back in May I wrote a prototype of a HLS Plugin
 * [HLS Render-Plugin Demo on YouTube](https://www.youtube.com/watch?v=_6VHt0thoII)
@@ -287,9 +296,12 @@ concatLeft = (long ++ veryLong) ++ extraLong
 
 ---
 
-## Théophile Choutri (Hecate)
+## Théophile Choutri (Hécate)
 
 ### Flora.pm
+
+<br/>
+<br/>
 
 * Haskell Package Search (Alternative frontend to Hackage). 
     * Fixed a content flash when loading in dark mode 
@@ -302,6 +314,9 @@ concatLeft = (long ++ veryLong) ++ extraLong
 ## Someone (My notes don't say who)
 
 ### GHC
+
+<br/>
+<br/>
 
 * Fixed a bug in GHC
 * There's a Language Extension:
