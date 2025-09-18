@@ -1,0 +1,94 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           munihac-talk
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/cad-talk#readme>
+homepage:       https://github.com/githubuser/munihac-talk#readme
+bug-reports:    https://github.com/githubuser/munihac-talk/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2025 Author name here
+license:        BSD-3-Clause
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/munihac-talk
+
+library
+  exposed-modules:
+      AddQRCode
+      AddSlideDiv
+      QRCode
+      Timeline
+  other-modules:
+      Paths_munihac_talk
+  autogen-modules:
+      Paths_munihac_talk
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      JuicyPixels
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , doctemplates
+    , fsnotify
+    , lens
+    , linear
+    , megaparsec
+    , optparse-applicative
+    , pandoc
+    , pandoc-types
+    , process
+    , qrcode-core
+    , split
+    , svg-tree
+    , text
+    , vector
+    , xml
+  default-language: Haskell2010
+
+executable munihac-talk-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_munihac_talk
+  autogen-modules:
+      Paths_munihac_talk
+  hs-source-dirs:
+      app
+  default-extensions:
+      OverloadedStrings
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      JuicyPixels
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , doctemplates
+    , fsnotify
+    , lens
+    , linear
+    , megaparsec
+    , munihac-talk
+    , optparse-applicative
+    , pandoc
+    , pandoc-types
+    , process
+    , qrcode-core
+    , split
+    , svg-tree
+    , text
+    , vector
+    , xml
+  default-language: Haskell2010

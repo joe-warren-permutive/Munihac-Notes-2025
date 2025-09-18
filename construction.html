@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚧 UNDER CONSTRUCTION 🚧</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #fb5607);
+            background-size: 600% 600%;
+            animation: gradientShift 3s ease infinite;
+            min-height: 100vh;
+            overflow-x: hidden;
+            cursor: crosshair;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .main-title {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #ff1744, #e91e63, #9c27b0, #673ab7, #3f51b5, #2196f3, #03a9f4, #00bcd4);
+            background-size: 800% 800%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbowText 2s ease-in-out infinite alternate, shake 0.5s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            transform: rotate(-2deg);
+        }
+        
+        @keyframes rainbowText {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        @keyframes shake {
+            0% { transform: rotate(-2deg) translateX(0px); }
+            25% { transform: rotate(-2deg) translateX(-2px); }
+            50% { transform: rotate(-2deg) translateX(2px); }
+            75% { transform: rotate(-2deg) translateX(-1px); }
+            100% { transform: rotate(-2deg) translateX(0px); }
+        }
+        
+        .subtitle {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #fff;
+            text-shadow: 
+                0 0 10px #ff006e,
+                0 0 20px #ff006e,
+                0 0 30px #ff006e,
+                0 0 40px #ff006e;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            transform: rotate(1deg);
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 
+                    0 0 10px #ff006e,
+                    0 0 20px #ff006e,
+                    0 0 30px #ff006e,
+                    0 0 40px #ff006e;
+            }
+            to {
+                text-shadow: 
+                    0 0 5px #ff006e,
+                    0 0 10px #ff006e,
+                    0 0 15px #ff006e,
+                    0 0 20px #ff006e,
+                    0 0 35px #ff006e,
+                    0 0 40px #ff006e;
+            }
+        }
+        
+        .emojis {
+            font-size: 4rem;
+            margin: 2rem 0;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        .message {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 900;
+            text-align: center;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 5px solid #ff006e;
+            box-shadow: 
+                0 0 20px #ff006e,
+                inset 0 0 20px rgba(255, 0, 110, 0.2);
+            max-width: 600px;
+            margin: 0 20px;
+            transform: rotate(-1deg);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 
+                    0 0 20px #ff006e,
+                    inset 0 0 20px rgba(255, 0, 110, 0.2);
+                transform: rotate(-1deg) scale(1);
+            }
+            50% {
+                box-shadow: 
+                    0 0 40px #ff006e,
+                    inset 0 0 40px rgba(255, 0, 110, 0.4);
+                transform: rotate(-1deg) scale(1.05);
+            }
+            100% {
+                box-shadow: 
+                    0 0 20px #ff006e,
+                    inset 0 0 20px rgba(255, 0, 110, 0.2);
+                transform: rotate(-1deg) scale(1);
+            }
+        }
+        
+        .sparkles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .sparkle {
+            position: absolute;
+            color: #fff;
+            font-size: 2rem;
+            animation: sparkleFloat 3s infinite ease-in-out;
+        }
+        
+        @keyframes sparkleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .glitch {
+            position: relative;
+        }
+        
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .glitch::before {
+            animation: glitch-1 0.5s infinite;
+            color: #ff006e;
+            z-index: -1;
+        }
+        
+        .glitch::after {
+            animation: glitch-2 0.5s infinite;
+            color: #3a86ff;
+            z-index: -2;
+        }
+        
+        @keyframes glitch-1 {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(-2px); }
+            20% { transform: translateX(2px); }
+            30% { transform: translateX(-2px); }
+            40% { transform: translateX(2px); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes glitch-2 {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(2px); }
+            20% { transform: translateX(-2px); }
+            30% { transform: translateX(2px); }
+            40% { transform: translateX(-2px); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(0); }
+        }
+        
+        .brat-text {
+            background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: bratShine 1s infinite;
+            font-weight: 900;
+        }
+        
+        @keyframes bratShine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @media (max-width: 768px) {
+            .message {
+                padding: 1.5rem;
+                margin: 0 10px;
+            }
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 1rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 2px solid #ff006e;
+            animation: slideIn 2s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sparkles" id="sparkles"></div>
+    
+    <div class="container">
+        <h1 class="main-title glitch" data-text="UNDER CONSTRUCTION">
+            UNDER CONSTRUCTION
+        </h1>
+        
+        <div class="emojis">🚧 ⚡ 💎 ⚡ 🚧</div>
+        
+        <h2 class="subtitle">
+            we're <span class="brat-text">LITERALLY</span> cooking rn
+        </h2>
+        
+        <div class="message">
+            <p>bestie this site is getting a <strong>MAJOR</strong> glow up ✨</p>
+            <br>
+            <p>check back soon for the most <span class="brat-text">ICONIC</span> content</p>
+            <br>
+            <p>no cap 📍</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        💅 peak pegasus energy 💅
+    </div>
+    
+    <script>
+        // Create floating sparkles
+        function createSparkle() {
+            const sparklesContainer = document.getElementById('sparkles');
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.innerHTML = ['✨', '💎', '⭐', '🌟', '💫'][Math.floor(Math.random() * 5)];
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.animationDelay = Math.random() * 2 + 's';
+            sparkle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            sparklesContainer.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 5000);
+        }
+        
+        // Create sparkles periodically
+        setInterval(createSparkle, 300);
+        
+        // Random cursor change
+        const cursors = ['crosshair', 'pointer', 'grab', 'grabbing', 'help'];
+        setInterval(() => {
+            document.body.style.cursor = cursors[Math.floor(Math.random() * cursors.length)];
+        }, 2000);
+        
+        // Add click effects
+        document.addEventListener('click', (e) => {
+            const explosion = document.createElement('div');
+            explosion.style.position = 'fixed';
+            explosion.style.left = e.clientX + 'px';
+            explosion.style.top = e.clientY + 'px';
+            explosion.style.fontSize = '2rem';
+            explosion.style.pointerEvents = 'none';
+            explosion.style.zIndex = '9999';
+            explosion.innerHTML = '💥';
+            explosion.style.animation = 'sparkleFloat 1s ease-out';
+            document.body.appendChild(explosion);
+            
+            setTimeout(() => {
+                explosion.remove();
+            }, 1000);
+        });
+        
+        // Konami code easter egg
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.code);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+            
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                document.body.style.transform = 'rotate(180deg)';
+                setTimeout(() => {
+                    document.body.style.transform = 'rotate(0deg)';
+                }, 2000);
+                konamiCode = [];
+            }
+        });
+    </script>
+</body>
+</html>
