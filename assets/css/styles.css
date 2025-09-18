@@ -268,7 +268,7 @@ h4 {
 .author {
   font-size: 2rem;
   font-weight: 600;
-  color: maroon;
+  color: #a2639c;
 }
 
 .author-desc {
@@ -348,14 +348,14 @@ blockquote p {
 }
 
 .slide blockquote {
-  border-left: 1px solid maroon;
+  border-left: 1px solid #a2639c;
   padding-left: 0.5em;
   margin: 0 6em;
 }
 
 blockquote::before {
   content: "\201C";
-  color: maroon;
+  color: #a2639c;
   font-size:  100px;
   margin: -30px 0 -70px 0;
   font-family: 'Playfair Display', serif;

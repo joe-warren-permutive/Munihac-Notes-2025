@@ -5,7 +5,7 @@
 }
 
 :root.light {
-  --header: maroon;
+  --header: #a2639c;
   --primary: black;
   --secondary: #889EAF;
   --background: white;

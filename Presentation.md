@@ -196,9 +196,16 @@ concatLeft = (long ++ veryLong) ++ extraLong
 
 ---
 
-## 6 years of FUNAR (Functional Architecture) 
+## 6 years of FUNAR 
 
-### Teaching Software Architecture and Haskell to the Uninitiated 
+### (Functional Architecture) 
+<br/>
+
+### Teaching Software Architecture
+### and Haskell
+### to the Uninitiated 
+
+<br/>
 
 ### Mike Sperber
 
@@ -207,12 +214,12 @@ concatLeft = (long ++ veryLong) ++ extraLong
     * and the FunArch conference.
     * Runs ISAQB certification for Software Architects.
         * Apparently quite well established in German BigCorps.
-    * Teaches basics of Functional Programming, and Functional Modeling.
+    * Teaches basics of Functional Programming
+        * and Functional Modeling.
 
 ---
 
 ## 6 years of FUNAR (Functional Architecture) 
-
 
 ### Mike Sperber
 
@@ -245,6 +252,9 @@ concatLeft = (long ++ veryLong) ++ extraLong
 ## MNIIP
 
 ### Cabal Matrix
+
+<br/>
+<br/>
 
 * Build your project in CI using a range of different configurations. 
 * Used by Library Authors.
