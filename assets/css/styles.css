@@ -152,7 +152,7 @@ li {
   transform: translate3d(0, 0, 0);
 }
 
-img.bigimage, model-viewer.bigimage{
+img.bigimage, model-viewer.bigimage, video.bigimage{
   position: absolute;
   top: 0;
   left: 0;

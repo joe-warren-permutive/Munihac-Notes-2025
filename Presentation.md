@@ -2,7 +2,7 @@
 css:
   - ./assets/css/variables.css
   - ./assets/css/styles.css
-title: Highlights from Munihac
+title: Highlights from MuniHac
 subtitle:
 introductory_notes: |
     I went to a conference last weekend, I'd like to talk through my notes
@@ -35,7 +35,7 @@ I'm going to run through the talks first, and then the Hack event
 
 * Demoing a Step Through Debugger, visualizing variables, expressions, stepping through into a thunk. 
 * Support for GHC 9.14 and later (so currently only alpha versions of the compiler)
-* [Link To GitHub](https://well-typed.github.io/haskell-debugger/)
+* [https://well-typed.github.io/haskell-debugger/](https://well-typed.github.io/haskell-debugger/)
 
 <br/>
 
@@ -44,6 +44,10 @@ I'm going to run through the talks first, and then the Hack event
 <div class="attribution">
 Simon Marlow (Paraphrased)
 </div>
+
+---
+
+<video autoplay muted loop src="assets/images/haskell-debugger.webm" class="bigimage"/>
 
 ---
 
@@ -271,8 +275,10 @@ concatLeft = (long ++ veryLong) ++ extraLong
 <br/>
 
 * Implementing the Haskell 98' Spec
-* Mostly finished; constructors still not done, about 70-80% complete. 
-* If complete, would allow you to explore properties of the Haskell type checker. 
+* Mostly finished: 
+    * constructors still not done
+    * about 70-80% complete. 
+* If complete, would allow you to explore properties of the type checker. 
 
 <br/>
 
@@ -343,6 +349,10 @@ concatLeft = (long ++ veryLong) ++ extraLong
 * Redesigned a Bycycle Key from OpenSCAD. 
 * Designed a Lamp
 * Integrated With Jupyter Notebooks (IHaskell Backend)
+
+---
+
+![](assets/images/lamp.jpg){.bigimage}
 
 ---
 
